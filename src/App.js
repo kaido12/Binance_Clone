@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header";
+import Home from "./pages/Home";
+import { useState } from "react";
+import Footer from "./Components/Footer";
 
 function App() {
+  const [sidebar, setSidebar] = useState(true);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Header showSidebar={showSidebar} />
+          <Routes>
+            <Route path="/" sidebar={sidebar} element={<Home />} />
+          </Routes>
+        </div>
+        <div className="bottomFooter">
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 

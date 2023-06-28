@@ -1,0 +1,24 @@
+.middleSectionContainer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.sideContainer {
+    display: flex;
+    flex: .2;
+}
+
+.coinContainer {
+    display: flex;
+    flex-direction: column;
+    flex: .8;
+}
+
+.bottomFooter {
+    position: absloute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
