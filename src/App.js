@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Home from "./pages/Home";
 import { useState } from "react";
 import Footer from "./Components/Footer";
+import "./style/Footer.css";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="App">
+        <div className="mainContentContainer">
           <Header showSidebar={showSidebar} />
           <Routes>
             <Route path="/" sidebar={sidebar} element={<Home />} />

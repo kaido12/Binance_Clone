@@ -1,6 +1,11 @@
+.mainContentContainer {
+  height: 100%;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+}
+
 .container {
   margin: auto;
-  
 }
 
 .navbar {
@@ -14,7 +19,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
   top: 50;
   left: 0;
 }
@@ -66,13 +71,12 @@ span {
 /* Coins */
 .heading {
   align-items: center;
-  background-color: #b4bcd6;  
+  background-color: #b4bcd6;
   border-radius: 8px;
   /* margin-top: 10%;
   margin-left: 40%; */
   padding: 2rem;
   font-weight: 700;
-
 }
 
 .heading > p {
@@ -90,36 +94,42 @@ span {
   background-color: #26272b;
   box-shadow: 0px 0px 12px #18191b;
   border-radius: 8px;
-  margin: 2rem  1rem;
-  padding: .7rem 1rem;
+  margin: 2rem 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .coin-row:hover {
   transform: scale(1.04);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-
-
-
-
 /* Footer section */
 
-.footer-first, .footer-second {
+.footer-first,
+.footer-second {
   background-color: #18191b;
 }
 
-.footer-top img{
+.footer-top img {
   background-color: transparent;
 }
 
 .input-group-text {
   background-color: wheat;
   padding: 10px 10px 10px 0px;
-
 }
 .footer-third {
   background-color: goldenrod;
   border-top: 1px solid white;
+}
+
+body .bottomFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body {
+  height: 100vh;
 }
