@@ -9,7 +9,7 @@ function App() {
   const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
-
+  console.log("HI");
   return (
     <>
       <BrowserRouter>
