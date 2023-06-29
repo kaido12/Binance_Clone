@@ -11,15 +11,9 @@ function Home(props) {
         <Sidebar />
       </div>
       <div className="coinContainer">
+        <Cover />
         <Coins coins={props.coins} />
-        <Cover />
-        <Cover />
         <div>Hello</div>
-
-
-
-
-        <Cover />
       </div>
     </div>
   );

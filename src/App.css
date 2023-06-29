@@ -18,6 +18,7 @@
   width: 250px;
   height: 100vh;
   display: flex;
+  /* flex: 0.2; */
   justify-content: center;
   /* position: fixed; */
   top: 50;
@@ -68,13 +69,36 @@ span {
   margin-left: 16px;
 }
 
+/* Cover */
+
+.cover-image {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.9;
+  /* object-fit:contain; */
+}
+
+.banner-content {
+  top: 25%;
+  left: 25%;
+  object-fit: contain;
+}
+
+.bttn {
+  padding: 10px 15px;
+  background-color: #e8f145;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bttn:hover {
+  background-color: #c4c432fa;
+}
+
 /* Coins */
 .heading {
   align-items: center;
   background-color: #b4bcd6;
   border-radius: 8px;
-  /* margin-top: 10%;
-  margin-left: 40%; */
   padding: 2rem;
   font-weight: 700;
 }
@@ -106,14 +130,11 @@ span {
 
 /* Footer section */
 
-.footer-first,
 .footer-second {
   background-color: #18191b;
 }
 
-.footer-top img {
-  background-color: transparent;
-}
+
 
 .input-group-text {
   background-color: wheat;
@@ -125,7 +146,7 @@ span {
 }
 
 body .bottomFooter {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
