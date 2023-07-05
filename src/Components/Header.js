@@ -11,7 +11,7 @@ function Header({showSidebar}) {
 
   
   return (
-    <div className="w-full sticky top-0 z-999">
+    <div className="w-full sticky-top z-999">
       <div className="flex p-2 items-center bg-slate-950">       
         
         <Link to="/">

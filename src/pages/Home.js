@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "../Components/Sidebar";
-import Coins from "../Components/Coins";
+import Sidebar from "../components/Sidebar";
+import Coins from "../components/Coins";
 import "../style/Home.css";
-import Cover from "../Components/Cover";
+import Cover from "../components/Cover";
 
 function Home(props) {
   return (

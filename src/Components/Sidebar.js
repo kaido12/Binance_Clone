@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import "../App.css";
 
-function Sidebar({ sidebar }) {
+function Sidebar() {
   return (
     <div className="container relative">
       <div className="nav-menu min-h-full">
