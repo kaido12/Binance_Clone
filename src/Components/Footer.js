@@ -6,7 +6,7 @@ import "../App.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer-second w-full py-4 relatve bottom-0 left-0 right-0">
+      <footer className="footer-second w-full mt-4 py-4 relatve bottom-0 left-0 right-0">
         <div className="flex flex-row justify-between mx-8">
           <div>
             <h4 className="text-white">Quick Links</h4>
