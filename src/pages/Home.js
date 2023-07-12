@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoins(response.data)
-      console.log(response.data[0])
+      // console.log(response.data)
     })
     .catch((error) => {
     console.log(error)
@@ -29,7 +29,6 @@ function Home() {
       <div className="coinContainer">
         <Cover />
         <Coins coins={coins} />
-        <div>Hello</div>
       </div>
     </div>
   );

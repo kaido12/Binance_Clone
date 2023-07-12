@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-
 import "../App.css";
+import CoinChart from "./CoinChart";
 
 const SingleCoin = () => {
   const params = useParams();
@@ -14,7 +14,7 @@ const SingleCoin = () => {
     axios
       .get(url)
       .then((res) => {
-        // console.log(res.data);
+      // console.log(res.data);
         setCoin(res.data);
       })
       .catch((error) => {
@@ -23,7 +23,7 @@ const SingleCoin = () => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <div className="coin-container">
         <div className="content">
           <div className="rank">
@@ -118,6 +118,10 @@ const SingleCoin = () => {
           </table>
         </div>
       </div>
+      {/* <div className="w-full flex items-center justify-center mx-8"> */}
+
+        <CoinChart />
+      {/* </div> */}
     </div>
   );
 };

@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Header({showSidebar}) {
-  
+function Header() {
 
   
   return (
