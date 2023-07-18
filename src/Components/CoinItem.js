@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import {BsHeart} from "react-icons/bs"
 
 const CoinItem = (props) => {
     return (
@@ -11,6 +12,7 @@ const CoinItem = (props) => {
             </div>
             <p>${props.coins.current_price.toLocaleString()}</p>
             <p>{props.coins.price_change_percentage_24h.toFixed(2)}%</p>
+            <p><BsHeart /></p>
             
         </div>
     )

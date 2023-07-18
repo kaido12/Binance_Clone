@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 import CoinItem from "./CoinItem";
+import { BsFillHeartFill } from "react-icons/bs";
 
 function Coins(props) {
   return (
@@ -12,15 +13,18 @@ function Coins(props) {
           <p className="coin-name">Coin</p>
           <p>Price</p>
           <p>24h Change</p>
+          <p>
+            <BsFillHeartFill />
+          </p>
         </div>
 
         {props.coins.map((coins) => {
-              return (
-                <Link to={`/coin/${coins.id}`} key={coins.id}>
-                  <CoinItem coins={coins} />
-                </Link>
-              );
-            })}
+          return (
+            <Link to={`/coin/${coins.id}`} key={coins.id}>
+              <CoinItem coins={coins} />
+            </Link>
+          );
+        })}
       </div>
     </>
   );
