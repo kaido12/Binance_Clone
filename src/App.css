@@ -226,6 +226,12 @@ th {
   padding-bottom: .5rem;
 }
 
+.graph-container {
+  max-width: 1080px;
+  margin: 1rem auto;
+  padding: .7rem 1rem;
+}
+
 .stats .row p:first-child {
   color: #d3d3d3;
 }

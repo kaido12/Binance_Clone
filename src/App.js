@@ -24,9 +24,9 @@ function App() {
         {/* <div className="mainContentContainer"> */}
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
           <Route path="/account" element={<Account/>}/>
           <Route path="/coin" element={<SingleCoin />}>
             <Route path=":coinId" element={<SingleCoin />} />

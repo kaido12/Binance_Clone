@@ -118,10 +118,10 @@ const SingleCoin = () => {
           </table>
         </div>
       </div>
-      {/* <div className="w-full flex items-center justify-center mx-8"> */}
+      <div className="graph-container">
 
         <CoinChart />
-      {/* </div> */}
+      </div>
     </div>
   );
 };
