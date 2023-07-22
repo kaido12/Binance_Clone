@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Coins from "../components/Coins";
-import "../style/Home.css";
+import "../App.css";
 import Cover from "../components/Cover";
 import Sidebar from "../components/Sidebar";
 import axios from "axios";

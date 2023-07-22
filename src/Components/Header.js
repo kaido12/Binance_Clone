@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="w-full sticky-top z-999">
-      <div className="flex p-2 py-2 items-center bg-slate-100">
+      <div className="flex p-2 py-4 items-center bg-slate-100">
         <Link to="/">
           <img src="./images/logo.png" width={120} alt="logo" />
         </Link>
-        <div className="flex flex-row text-black tex-md justify-between">
+        <div className="flex flex-row text-black text-base justify-between">
           <h3 className=" px-4">Buy Crypto</h3>
           <h3 className=" px-4">Earn</h3>
           <h3 className=" px-4">Trade</h3>
@@ -17,7 +17,7 @@ function Header() {
           <h3 className=" px-4">Feed</h3>
         </div>
 
-        <div className="flex flex-grow justify-end items-center text-md  ml-4 cursor-pointer">
+        <div className="flex flex-grow justify-end items-center text-base  ml-4 cursor-pointer">
           {/* <div className="md:block hidden px-4">
             <Switcher className="text-white" />
           </div> */}
@@ -36,10 +36,10 @@ function Header() {
           ) : ( */}
           <div>
             <Link to="/login">
-              <button className="text-black text-md pr-4">Login</button>
+              <button className="text-black text-base pr-4">Login</button>
             </Link>
             <Link to="/signup">
-              <button className="bg-yellow-600 text-md px-4 py-2 rounded-md cursor-pointer text-white">Sign Up</button>
+              <button className="bg-yellow-600 text-base px-4 py-2 rounded-md cursor-pointer text-white">Sign Up</button>
             </Link>
           </div>
           {/* )} */}

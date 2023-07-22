@@ -13,9 +13,9 @@ function Coins(props) {
           <p className="coin-name">Coin</p>
           <p>Price</p>
           <p>24h Change</p>
-          <p>
+          {/* <p>
             <BsFillHeartFill />
-          </p>
+          </p> */}
         </div>
 
         {props.coins.map((coins) => {

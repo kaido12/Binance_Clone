@@ -11,6 +11,7 @@ import { AuthContextProvider } from "./context/AuthContext";
 // import axios from "axios";
 import SingleCoin from "./components/SingleCoin";
 import Account from "./pages/Account";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   // const [sidebar, setSidebar] = useState(true);
@@ -27,7 +28,14 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
-          <Route path="/account" element={<Account/>}/>
+          <Route
+            path="/account"
+            element={
+              <ProtectedRoute>
+                <Account />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/coin" element={<SingleCoin />}>
             <Route path=":coinId" element={<SingleCoin />} />
           </Route>
