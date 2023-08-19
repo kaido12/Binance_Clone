@@ -83,8 +83,8 @@ span {
 }
 
 .banner-content {
-  top: 25%;
-  left: 22%;
+  /* top: 25%; */
+  /* left: 22%; */
   object-fit: contain;
 }
 
