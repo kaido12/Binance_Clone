@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <>
       <div className="w-full h-screen">
-        <div className="bg-white fixed top-0 left-0 w-full h-screen"></div>
+        <div className="bg-white/50 fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-6 z-50">
           <div className="max-w-[450px] h-[600px] mx-auto rounded-xl bg-slate-200/75 text-black">
             <div className="max-w-[320px] mx-auto py-8">
