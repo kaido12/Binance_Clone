@@ -22,11 +22,11 @@ function Home() {
   }, [])
 
   return (
-    <div className="middleSectionContainer">
-      <div className="sideContainer">
+    <div className="bg-slate-100 w-full flex col-span-8">
+      <div className="col-span-2">
         <Sidebar />
       </div>
-      <div className="coinContainer">
+      <div className="col-span-6">
         <Cover />
         <Coins coins={coins} />
       </div>

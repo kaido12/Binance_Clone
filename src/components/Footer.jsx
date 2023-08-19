@@ -6,19 +6,19 @@ import "../App.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer-second w-full mt-4 py-4 relatve bottom-0 left-0 right-0">
-        <div className="flex flex-row justify-between mx-8">
+      <footer className="bg-[#E5E4E2] w-full mt-4 py-4 relatve bottom-0 left-0">
+        <div className="flex  flex-row justify-between md:mx-8 mx-2 text-center lg:text-base text-sm">
           <div className="text-black">
-            <h4>Quick Links</h4>
-            <div className="footer-links flex flex-col">
-              <Link className="py-2 mb-1">Headphones</Link>
+            <h4 className="py-2 mb-1 font-semibold">Quick Links</h4>
+            <div className="flex flex-col ">
+              <Link className="py-2 mb-1 ">Headphones</Link>
               <Link className=" py-2 mb-1">Laptops</Link>
               <Link className=" py-2 mb-1">Tablets</Link>
               <Link className=" py-2 mb-1">Watches</Link>
             </div>
           </div>
-          <div>
-            <h4 className="text-black">Information</h4>
+          <div className="text-black">
+            <h4 className=" py-2 mb-1 font-semibold">Information</h4>
             <div className="footer-links flex flex-col">
               <Link to="/blog" className="py-2 mb-1">
                 Blogs
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-black">
-            <h4>Account</h4>
+            <h4 className="y-2 mb-1 font-semibold">Account</h4>
             <div className="footer-links flex flex-col">
               <Link className=" py-2 mb-1">About Us</Link>
               <Link className=" py-2 mb-1">FAQ</Link>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-black">
-            <h4>Contact Us</h4>
+            <h4 className="py-2 mb-1 font-semibold">Contact Us</h4>
             <div className="flex flex-col">
               <div>
                 T-62, Bandhan Palace, <br />

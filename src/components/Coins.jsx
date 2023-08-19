@@ -8,7 +8,7 @@ function Coins(props) {
   return (
     <>
       <div>
-        <div className="heading justify-evenly relative flex flex-grow mx-4 mt-4">
+        <div className="heading justify-evenly relative flex flex-grow mx-4 mt-4 sm:text-sm">
           <p>#</p>
           <p className="coin-name">Coin</p>
           <p>Price</p>

@@ -5,8 +5,8 @@ import "../App.css";
 
 function Sidebar() {
   return (
-    <div className="container relative">
-      <div className="nav-menu bg-slate-200 min-h-full">
+    <div className="hidden lg:contents container relative">
+      <div className="nav-menu bg-slate-100">
         <ul className="nav-menu-items">
           {SidebarData.map((item, index) => {
             return (

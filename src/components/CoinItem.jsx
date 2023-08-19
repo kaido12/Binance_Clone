@@ -34,7 +34,7 @@ const CoinItem = (props) => {
   // }
 
   return (
-    <div className="coin-row h-12">
+    <div className="coin-row h-12 sm:text-sm">
       <p>{props.coins.market_cap_rank}</p>
       <div className="img-symbol">
         <img className="image" src={props.coins.image} alt="" />
