@@ -1,33 +1,33 @@
 export const SidebarData = [
   {
-    title: "Home",
+    title: "Dashboard",
     path: "/",
     cName: "nav-text",
   },
   {
-    title: "Reports",
-    path: "/reports",
+    title: "Security",
+    // path: "/reports",
     cName: "nav-text",
   },
   {
-    title: "Products",
-    path: "/products",
+    title: "Identification",
+    // path: "/products",
     cName: "nav-text",
   },
   {
-    title: "Team",
-    path: "/team",
+    title: "Payment",
+    // path: "/team",
     cName: "nav-text",
   },
   {
-    title: "Messages",
-    path: "/messages",
+    title: "Referral",
+    // path: "/messages",
     cName: "nav-text",
   },
 
   {
-    title: "Support",
-    path: "/support",
+    title: "Settings",
+    // path: "/support",
     cName: "nav-text",
   },
 ];

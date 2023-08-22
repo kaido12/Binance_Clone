@@ -22,10 +22,10 @@ function Cover() {
     <>
       <div>
         <img src="./images/cover.jpg" className="cover-image" alt="" />
-        <div className="banner-content absolute text-justify flex flex-col items-start lg:text-md top-[5%] lg:top-[25%] md:top-[25%] sm:top-[15%] left-[5%] lg:left-[22%] md:left-[15%] sm:left-[7%] ">
+        <div className="banner-content absolute text-justify flex flex-col items-start lg:text-md top-[15%] lg:top-[25%] md:top-[25%] sm:top-[15%] left-[5%] lg:left-[22%] md:left-[28%] sm:left-[7%] ">
           <h2 className="text-white lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold my-4 ">Cryptocurrency is freedom, banking is slavery</h2>
           <h3 className="py-1 text-white lg:text-2xl sm:text-xl text-lg font-semibold my-2">Buy your first bitcoin ₿ now</h3>
-          <button  type="button" className="bttn rounded-full text-slate-700">
+          <button  type="button" className="text-md px-4 py-2 font-medium bg-yellow-600 hover:bg-yellow-700 rounded-xl text-slate-200">
             Buy ₿
           </button>
         </div>
