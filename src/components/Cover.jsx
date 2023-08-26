@@ -2,24 +2,27 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 import axios from "axios";
 import TrendingItem from "./TrendingItem";
+import { Link } from "react-router-dom";
 
 function Cover() {
-  // const [coins, setCoins] = useState([])
+  // const [coins, setCoins] = useState([]);
+  const [data, setData] = useState([]);
 
-  // const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false'
+  // const urlnew = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=99&page=1&sparkline=false";
+
+  const url = "https://api.coingecko.com/api/v3/search/trending";
 
   // useEffect(() => {
-  //   axios.get(url).then((response) => {
-  //     // setCoins(response.data)
-  //     console.log(response.data[0])
-  //   })
-  //   .catch((error) => {
-  //   console.log(error)
-  //    })
-  // }, [])
-
-  const [data, setData] = useState([]);
-  const url = "https://api.coingecko.com/api/v3/search/trending";
+  //   axios
+  //     .get(urlnew)
+  //     .then((response) => {
+  //       // setCoins(response.data)
+  //       console.log(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
   useEffect(() => {
     axios.get(url).then((response) => {
@@ -39,12 +42,15 @@ function Cover() {
           <h3 className="py-1 text-white lg:text-2xl sm:text-xl text-lg font-semibold my-2">
             Buy your first bitcoin ₿ now
           </h3>
-          <button
-            type="button"
-            className="text-md px-4 py-2 font-medium bg-yellow-600 hover:bg-yellow-700 rounded-xl text-slate-200"
-          >
-            Buy ₿
-          </button>
+          {/* to={`/data/${coin.item?.id}`} */}
+          <Link >
+            <button
+              type="button"
+              className="text-md px-4 py-2 font-medium bg-yellow-600 hover:bg-yellow-700 rounded-xl text-slate-200"
+            >
+              Buy ₿
+            </button>
+          </Link>
           <div className=" hidden lg:contents rounded-div lg:py-4 py-2">
             <h1 className="lg:text-3xl text-white md:text-2xl text-xl font-semibold my-2 mt-8">Trending</h1>
             <div className="grid gap-1 lg:gap-8 grid-cols-4">

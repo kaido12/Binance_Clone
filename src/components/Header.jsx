@@ -90,7 +90,7 @@ function Header() {
 
               {user?.email ? (
                 <div className="flex items-center ">
-                  <Link to="/account" className="flex flex-row gap-[2px]">
+                  <Link  className="flex flex-row gap-[2px]">
                     <VscAccount className=" text-yellow-600 font-bold text-2xl" />
                     <button className=" text-black capitalize text-base md:mr-2 pr-4">
                       {user.email.split("@")[0]}
