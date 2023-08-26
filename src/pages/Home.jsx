@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Coins from "../components/Coins";
 import "../App.css";
 import Cover from "../components/Cover";
 import Sidebar from "../components/Sidebar";
 import axios from "axios";
 import Pagination from "../components/Pagination";
-
 
 function Home() {
   const [coins, setCoins] = useState([]);
@@ -27,6 +26,10 @@ function Home() {
       });
   }, []);
 
+  function Loading() {
+    return <h2>🌀 Loading...</h2>;
+  }
+
   // Get current posts
   const indexOfLastCoin = currentPage * coinsPerPage;
   const indexOfFirstCoin = indexOfLastCoin - coinsPerPage;
@@ -37,18 +40,18 @@ function Home() {
 
   return (
     <>
-      
-      <div className="bg-slate-100 w-full flex col-span-8">
-        <div className="col-span-2">
-          <Sidebar />
+      <Suspense fallback={<Loading />}>
+        <div className="bg-slate-100 w-full flex col-span-8">
+          <div className="col-span-2">
+            <Sidebar />
+          </div>
+          <div className="col-span-6">
+            <Cover />
+            <Coins coins={currentCoins} />
+            <Pagination coinsPerPage={coinsPerPage} totalCoins={coins.length} paginate={paginate} />
+          </div>
         </div>
-        <div className="col-span-6">
-          <Cover />
-          <Coins coins={currentCoins} />
-          <Pagination coinsPerPage={coinsPerPage} totalCoins={coins.length} paginate={paginate} />
-        </div>
-      </div>
-    
+      </Suspense>
     </>
   );
 }

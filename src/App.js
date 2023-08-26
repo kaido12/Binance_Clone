@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <AuthContextProvider>
-        {/* <div className="mainContentContainer"> */}
+        
         <Header />
         
         <Routes>
@@ -42,7 +42,7 @@ function App() {
         </Routes>
         <Footer />
     
-        {/* </div>         */}
+        
       </AuthContextProvider>
     </>
   );
