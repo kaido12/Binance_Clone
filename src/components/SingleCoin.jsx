@@ -122,8 +122,18 @@ const SingleCoin = () => {
             <button className="text-slate-900 bg-green-500 px-4 py-2 rounded-lg">Sell</button>
           </div>
           <div className="flex justify-center mx-4">
-            <input type="number" min={1} className="mx-2" name="" id="" style={{ width: "70px" }} />
-            <input type="number" min={1} className="mx-2" name="" id="" style={{ width: "70px" }} />
+            <input
+              type="number"
+              min={0}
+              name="number-input"
+              class="block mx-2 w-20 py-2 pl-3 border border-gray-300 rounded-md focus:ring-red-500  focus:ring-opacity-50 transition ease-in-out duration-150"
+            />
+            <input
+              type="number"
+              min={0}
+              name="number-input"
+              class="block mx-2 w-20 py-2 pl-3 border border-gray-300 rounded-md focus:ring-green-500 f focus:ring-opacity-50 transition ease-in-out duration-150"
+            />
           </div>
         </div>
       </div>
