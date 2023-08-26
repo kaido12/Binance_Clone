@@ -14,7 +14,7 @@ const SingleCoin = () => {
     axios
       .get(url)
       .then((res) => {
-      // console.log(res.data);
+        // console.log(res.data);
         setCoin(res.data);
       })
       .catch((error) => {
@@ -38,9 +38,8 @@ const SingleCoin = () => {
             <div className="coin-price">
               {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
               {coin.market_data?.price_change_percentage_24h_in_currency ? (
-                    <p>{coin.market_data.price_change_percentage_24h_in_currency.usd.toFixed(1)}%</p>
-                  ) : null}
-              
+                <p>{coin.market_data.price_change_percentage_24h_in_currency.usd.toFixed(1)}%</p>
+              ) : null}
             </div>
           </div>
         </div>
@@ -117,9 +116,18 @@ const SingleCoin = () => {
             </tbody>
           </table>
         </div>
+        <div className="box">
+          <div className="flex justify-center mx-4 my-4 gap-4">
+            <button className="text-slate-900 bg-red-500 px-4 py-2 rounded-lg">Buy</button>
+            <button className="text-slate-900 bg-green-500 px-4 py-2 rounded-lg">Sell</button>
+          </div>
+          <div className="flex justify-center mx-4">
+            <input type="number" min={1} className="mx-2" name="" id="" style={{ width: "70px" }} />
+            <input type="number" min={1} className="mx-2" name="" id="" style={{ width: "70px" }} />
+          </div>
+        </div>
       </div>
       <div className="graph-container">
-
         <CoinChart />
       </div>
     </div>
