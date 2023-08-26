@@ -1,33 +1,34 @@
 export const SidebarData = [
-  {
+  { 
+  
     title: "Dashboard",
     path: "/",
     cName: "nav-text",
   },
   {
     title: "Security",
-    // path: "/reports",
+    // path: "",
     cName: "nav-text",
   },
   {
     title: "Identification",
-    // path: "/products",
+    // path: "",
     cName: "nav-text",
   },
   {
     title: "Payment",
-    // path: "/team",
+    // path: "",
     cName: "nav-text",
   },
   {
     title: "Referral",
-    // path: "/messages",
+    // path: "",
     cName: "nav-text",
   },
 
   {
     title: "Settings",
-    // path: "/support",
+    // path: "",
     cName: "nav-text",
   },
 ];

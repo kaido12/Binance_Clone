@@ -6,6 +6,7 @@ import Sidebar from "../components/Sidebar";
 import axios from "axios";
 import Pagination from "../components/Pagination";
 
+
 function Home() {
   const [coins, setCoins] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -35,16 +36,20 @@ function Home() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="bg-slate-100 w-full flex col-span-8">
-      <div className="col-span-2">
-        <Sidebar />
+    <>
+      
+      <div className="bg-slate-100 w-full flex col-span-8">
+        <div className="col-span-2">
+          <Sidebar />
+        </div>
+        <div className="col-span-6">
+          <Cover />
+          <Coins coins={currentCoins} />
+          <Pagination coinsPerPage={coinsPerPage} totalCoins={coins.length} paginate={paginate} />
+        </div>
       </div>
-      <div className="col-span-6">
-        <Cover />
-        <Coins coins={currentCoins} />
-        <Pagination coinsPerPage={coinsPerPage} totalCoins={coins.length} paginate={paginate} />
-      </div>
-    </div>
+    
+    </>
   );
 }
 

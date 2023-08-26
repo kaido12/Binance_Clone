@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#E5E4E2] w-full py-4 relatve bottom-0 left-0">
-        <div  className="flex  flex-row justify-between md:mx-8 mx-2 text-center md:text-base text-xs">
+        <div  className="flex  flex-row justify-between md:mx-8 mx-6 text-center md:text-base text-xs">
           <div className="text-black">
             <h4 className="py-2 mb-1 font-semibold">Quick Links</h4>
             <div className="flex flex-col ">

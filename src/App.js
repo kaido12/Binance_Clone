@@ -16,24 +16,13 @@ import { useEffect, useState } from "react";
 
 function App() {
 
-  const [isToShow, setToShow] = useState(true)
-
-  useEffect(() =>{
-    showHeaderFooter();
-  },[])
-
-  const showHeaderFooter = () =>{
-    const pathName = window.location.pathname;
-    if(pathName =='/signup' || pathName == "/login" ){
-     setToShow(false)
-    }
-  }
+  
   
   return (
     <>
       <AuthContextProvider>
         {/* <div className="mainContentContainer"> */}
-        {isToShow && <Header />}
+        <Header />
         
         <Routes>
           <Route path="/signup" element={<Signup />} />
@@ -51,7 +40,7 @@ function App() {
             <Route path=":coinId" element={<SingleCoin />} />
           </Route>
         </Routes>
-        {isToShow && <Footer />}
+        <Footer />
     
         {/* </div>         */}
       </AuthContextProvider>

@@ -12,7 +12,7 @@ const Pagination = ({ coinsPerPage, totalCoins, paginate }) => {
       <ul className='flex flex-row justify-end cursor-pointer my-8 mr-4'>
         {pageNumbers.map(number => (
           <li key={number} >
-            <a onClick={() => paginate(number)} className='border-[3px] border-spacing-3  p-[6px] mx-1 hover:bg-amber-300 active:bg-amber-400'>
+            <a onClick={() => paginate(number)} className='border-[3px] border-spacing-3  p-[6px] mx-1 hover:bg-amber-300'>
               {number}
             </a>
           </li>
