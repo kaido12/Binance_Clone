@@ -98,7 +98,7 @@ function Header() {
                   </Link>
                   <Link to="/login">
                     <button
-                      onClick={handleLogout}
+                      onClick={() => handleLogout}
                       className="bg-black text-base md:mr-2 mr-4 px-6 py-2 rounded-md cursor-pointer text-white"
                     >
                       Logout
