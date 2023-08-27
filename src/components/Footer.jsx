@@ -9,41 +9,44 @@ const Footer = () => {
       <footer className="bg-[#E5E4E2] w-full py-4 relatve bottom-0 left-0">
         <div  className="flex  flex-row justify-between md:mx-8 mx-6 text-center md:text-base text-xs">
           <div className="text-black">
-            <h4 className="py-2 mb-1 font-semibold">Quick Links</h4>
+            <h4 className="py-2 mb-1 font-semibold">About Us</h4>
             <div className="flex flex-col ">
-              <Link className="py-2 mb-1 ">Headphones</Link>
-              <Link className=" py-2 mb-1">Laptops</Link>
-              <Link className=" py-2 mb-1">Tablets</Link>
-              <Link className=" py-2 mb-1">Watches</Link>
+              <Link className="py-2 mb-1 ">Careers</Link>
+              <Link className=" py-2 mb-1">Community</Link>
+              <Link className=" py-2 mb-1">Blog</Link>
+              <Link className=" py-2 mb-1">Terms</Link>
+              <Link className=" py-2 mb-1">Privacy</Link>
             </div>
           </div>
           <div className="text-black">
-            <h4 className=" py-2 mb-1 font-semibold">Information</h4>
+            <h4 className=" py-2 mb-1 font-semibold">Products</h4>
             <div className="footer-links flex flex-col">
-              <Link to="/blog" className="py-2 mb-1">
-                Blogs
+              <Link  className="py-2 mb-1">
+                Exchange
               </Link>
-              <Link to="/privacy-policy" className=" py-2 mb-1">
-                Privacy Policy
+              <Link  className=" py-2 mb-1">
+                Research
               </Link>
-              <Link to="/refund-policy" className=" py-2 mb-1">
-                Refund Policy
+              <Link  className=" py-2 mb-1">
+                Leverage Token
               </Link>
-              <Link to="/delivery-policy" className=" py-2 mb-1">
-                Delivery Policy
+              <Link  className=" py-2 mb-1">
+                Announcements
               </Link>
-              <Link to="/terms-and-conditions" className=" py-2 mb-1">
-                Terms and Conditions
+              <Link  className=" py-2 mb-1">
+                Risk Warning
               </Link>
             </div>
           </div>
           <div className="text-black">
-            <h4 className="y-2 py-2 mb-1 font-semibold">Account</h4>
+            <h4 className="y-2 py-2 mb-1 font-semibold">Support</h4>
             <div className="footer-links flex flex-col">
-              <Link className=" py-2 mb-1">About Us</Link>
-              <Link className=" py-2 mb-1">FAQ</Link>
+              <Link className=" py-2 mb-1">24/7 Chat Support</Link>
+              <Link className=" py-2 mb-1">FAQs</Link>
+              <Link className=" py-2 mb-1">Binance Legal</Link>
+              <Link className=" py-2 mb-1">Support Center</Link>
               <Link className=" py-2 mb-1">
-                Contact
+                Trading Rules
               </Link>
             </div>
           </div>
@@ -51,13 +54,13 @@ const Footer = () => {
             <h4 className="py-2 mb-1 font-semibold">Contact Us</h4>
             <div className="flex flex-col">
               <div>
-                T-62, Bandhan Palace, <br />
-                Jampur, Noida,
+                H-47, Bandhan Palace, <br />
+                Jampur, Mumbai,
                 <br />
                 PinCode: 110162
               </div>
-              <div>+91-8081828384</div>
-              <div>jirachi@hotmail.com</div>
+              <div>+91-5081828384</div>
+              <div>jirchi@hotmail.com</div>
               <div className="text-2xl ml-0 flex items-center justify-evenly mt-2">
                 <span className="text-yellow-600">
                   <BsFacebook />
