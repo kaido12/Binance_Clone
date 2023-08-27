@@ -90,7 +90,7 @@ function Header() {
 
               {user?.email ? (
                 <div className="flex items-center ">
-                  <Link  className="flex flex-row gap-[2px]">
+                  <Link className="flex flex-row gap-[2px]">
                     <VscAccount className=" text-yellow-600 font-bold text-2xl" />
                     <button className=" text-black capitalize text-base md:mr-2 pr-4">
                       {user.email.split("@")[0]}
@@ -98,7 +98,7 @@ function Header() {
                   </Link>
                   <Link to="/login">
                     <button
-                      onClick={() => handleLogout}
+                      onClick={handleLogout}
                       className="bg-black text-base md:mr-2 mr-4 px-6 py-2 rounded-md cursor-pointer text-white"
                     >
                       Logout
